@@ -3,18 +3,18 @@ from langchain_openai import ChatOpenAI
 
 class CustomAgents:
     def __init__(self):
-        self.gpt_model = ChatOpenAI(model_name="gpt-4", temperature=0.7)
+        self.gpt_model = ChatOpenAI(model_name="gpt-4o-mini", temperature=0.7)
 
     def create_agent(self, role):
         descriptions = {
-            "Market Analyst": "I specialize in market research and analysis, providing insights that are crucial for strategic planning.",
-            "Marketing Strategist": "I develop marketing strategies that effectively target key demographics and maximize market penetration."
+            "Market Analyst": "Eu me especializo em pesquisa e análise de mercado, fornecendo insights que são cruciais para o planejamento estratégico.",
+            "Marketing Strategist": "Eu desenvolvo estratégias de marketing que efetivamente atingem os principais segmentos demográficos e maximizam a penetração no mercado."
         }
 
         return Agent(
             role=role,
             backstory=descriptions[role],
-            goal=f"Develop detailed, actionable insights for {role}.",
+            goal=f"Desenvolver insights detalhados e acionáveis para {role}.",
             verbose=True,
             llm=self.gpt_model
         )
