@@ -7,38 +7,37 @@ class CustomTasks:
     def create_task(self, agent, business_type, task_type):
         task_descriptions = {
             "market_analysis": (
-                f"Conduct an in-depth market analysis for a {business_type}, focusing on understanding market size, "
-                f"identifying current trends, analyzing competitor strategies, and evaluating customer demographics. "
-                f"Assess the regulatory environment and potential barriers to entry that might affect the launch and "
-                f"sustainability of the business."
+                f"Realizar uma análise de mercado aprofundada para um(a) {business_type}, focando em entender o tamanho do mercado, "
+                f"identificar tendências atuais, analisar estratégias dos concorrentes e avaliar os dados demográficos dos clientes. "
+                f"Avaliar o ambiente regulatório e possíveis barreiras à entrada que possam afetar o lançamento e a sustentabilidade do negócio."
             ),
             "marketing_strategy": (
-                f"Develop a detailed marketing strategy for a {business_type} using the insights gained from the "
-                f"market analysis. This strategy should outline targeted marketing channels, customer engagement plans, "
-                f"brand positioning, and promotional tactics. Include a budget forecast and expected impacts on market penetration."
+                f"Desenvolver uma estratégia de marketing detalhada para um(a) {business_type} utilizando os insights obtidos na "
+                f"análise de mercado. Esta estratégia deve delinear os canais de marketing direcionados, planos de engajamento do cliente, "
+                f"posicionamento da marca e táticas promocionais. Incluir uma previsão orçamentária e impactos esperados na penetração de mercado."
             ),
             "integration": (
-                f"Create a comprehensive 30-day launch plan for a {business_type} that delineates daily activities, "
-                f"strategic objectives, and operational requirements. Ensure the plan includes a timeline for each phase "
-                f"of the launch, identifies key milestones, and outlines resource allocation to establish a roadmap for "
-                f"a successful market entry."
+                f"Criar um plano abrangente de lançamento de 30 dias para um(a) {business_type}, delineando atividades diárias, "
+                f"objetivos estratégicos e requisitos operacionais. Garantir que o plano inclua um cronograma para cada fase "
+                f"do lançamento, identifique marcos chave e descreva a alocação de recursos para estabelecer um roteiro para "
+                f"uma entrada bem-sucedida no mercado."
             )
         }
 
         expected_outputs = {
             "market_analysis": (
-                f"Detailed report on the market conditions for a {business_type}, including data on market size, growth potential, "
-                f"key competitors, and customer profiles. The report should also provide actionable insights and strategic recommendations."
+                f"Relatório detalhado sobre as condições de mercado para um(a) {business_type}, incluindo dados sobre tamanho de mercado, potencial de crescimento, "
+                f"principais concorrentes e perfis de clientes. O relatório também deve fornecer insights acionáveis e recomendações estratégicas."
             ),
             "marketing_strategy": (
-                f"Comprehensive marketing playbook for a {business_type}, detailing all marketing efforts, channel strategies, "
-                f"and communication plans along with a schedule and projected outcomes. The playbook should align with the business's "
-                f"overall objectives and customer acquisition targets."
+                f"Manual abrangente de marketing para um(a) {business_type}, detalhando todos os esforços de marketing, estratégias de canal, "
+                f"e planos de comunicação, juntamente com um cronograma e resultados projetados. O manual deve estar alinhado com os objetivos gerais do negócio "
+                f"e as metas de aquisição de clientes."
             ),
             "integration": (
-                f"A fully articulated 30-day launch plan for a {business_type} with clear action items, responsibilities, "
-                f"and checkpoints. The plan should cover all necessary preparations for the business to commence operations "
-                f"smoothly and achieve early traction."
+                f"Um plano de lançamento totalmente articulado de 30 dias para um(a) {business_type} com itens de ação claros, responsabilidades, "
+                f"e pontos de verificação. O plano deve cobrir todas as preparações necessárias para que o negócio inicie suas operações "
+                f"sem problemas e atinja uma tração inicial."
             )
         }
 
