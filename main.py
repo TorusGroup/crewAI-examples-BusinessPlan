@@ -3,8 +3,8 @@ from crewai import Crew
 from agents import CustomAgents
 from tasks import CustomTasks
 
-# Set up environment variables
-os.environ["OPENAI_API_KEY"] = "YOUR API KEY"
+# Configurar variáveis de ambiente
+os.environ["OPENAI_API_KEY"] = "SUA CHAVE DE API"
 
 class BusinessAutomationCrew:
     def __init__(self, business_type):
@@ -33,14 +33,14 @@ class BusinessAutomationCrew:
         return crew.kickoff()
 
 if __name__ == "__main__":
-    print("Welcome to the Business Automation Crew Setup")
+    print("Bem-vindo à Configuração da Equipe de Automação de Negócios")
     print("------------------------------------------------")
-    business_type = input("What business do you seek to build today? ").strip()
+    business_type = input("Que tipo de negócio você deseja construir hoje? ").strip()
 
     automation_crew = BusinessAutomationCrew(business_type)
     business_plan = automation_crew.run()
 
     print("\n\n########################")
-    print("## Here are the results of your business automation project:")
+    print("## Aqui estão os resultados do seu projeto de automação de negócios:")
     print("########################\n")
     print(business_plan)
